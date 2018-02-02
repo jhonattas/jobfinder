@@ -6,7 +6,7 @@
     <string name="form_email">Email</string>
     <string name="form_mobilephone">Celular</string>
     <string name="form_cancel">Cancelar</string>
-    <string name="form_submite">Enviar</string>
+    <string name="form_submit">Enviar</string>
     <string name="form_error_email_already_registered">Email já registrado</string>
     <string name="form_error_email_invalid">Email inválido</string>
     <string name="request_invite">Requisitar Convite</string>

@@ -1,20 +1,24 @@
-package com.soucriador.jobfinder;
+package com.soucriador.jobfinder.view.activities;
 
-import android.os.Build;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdSize;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
+import com.soucriador.jobfinder.BuildConfig;
+import com.soucriador.jobfinder.R;
 
 public class SplashActivity extends AppCompatActivity {
 
     AdView mAdView;
+    Button btRequestInvite;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,12 +27,16 @@ public class SplashActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        MobileAds.initialize(this, BuildConfig.ad_id);
+        createAd();
 
-        // encontra o espaco do anuncio no layout
-        mAdView = findViewById(R.id.adView);
-        AdRequest adRequest = new AdRequest.Builder().build();
-        mAdView.loadAd(adRequest);
+        btRequestInvite = findViewById(R.id.btRequestInvite);
+        btRequestInvite.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent openRI = new Intent(SplashActivity.this, RequestInviteActivity.class);
+                startActivity(openRI);
+            }
+        });
 
     }
 
@@ -47,5 +55,14 @@ public class SplashActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    void createAd(){
+        MobileAds.initialize(this, BuildConfig.ad_id);
+
+        // encontra o espaco do anuncio no layout
+        mAdView = findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
     }
 }

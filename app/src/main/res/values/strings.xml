@@ -10,7 +10,7 @@
     <string name="form_email">Email</string>
     <string name="form_mobilephone">Mobile Phone</string>
     <string name="form_cancel">Cancel</string>
-    <string name="form_submite">Submit</string>
+    <string name="form_submit">Submit</string>
 
     <string name="form_error_email_already_registered">Email already registered</string>
     <string name="form_error_email_invalid">Email Invalid</string>

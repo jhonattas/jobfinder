@@ -1,4 +1,18 @@
 <resources>
-    <string name="app_name">Agencias Campinas</string>
+    <string name="app_name">Mobile Jobs</string>
     <string name="action_settings">Settings</string>
+    <string name="request_invite">Request Invite</string>
+
+    <string name="employment_agencies">Employment Agencies</string>
+    <string name="list_agencies">List Agencies</string>
+
+    <string name="form_name">Name</string>
+    <string name="form_email">Email</string>
+    <string name="form_mobilephone">Mobile Phone</string>
+    <string name="form_cancel">Cancel</string>
+    <string name="form_submite">Submit</string>
+
+    <string name="form_error_email_already_registered">Email already registered</string>
+    <string name="form_error_email_invalid">Email Invalid</string>
+
 </resources>

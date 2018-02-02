@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Emprega Celular</string>
+    <string name="action_settings">Ajustes</string>
+    <string name="form_name">Nome</string>
+    <string name="form_email">Email</string>
+    <string name="form_mobilephone">Celular</string>
+    <string name="form_cancel">Cancelar</string>
+    <string name="form_submite">Enviar</string>
+    <string name="form_error_email_already_registered">Email já registrado</string>
+    <string name="form_error_email_invalid">Email inválido</string>
+    <string name="request_invite">Requisitar Convite</string>
+    <string name="employment_agencies">Agências de Emprego</string>
+    <string name="list_agencies">List Agencies</string>
+</resources>
